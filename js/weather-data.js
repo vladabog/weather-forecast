@@ -56,7 +56,7 @@ Object.defineProperty(Weather.prototype, 'icon', {
         return this._icon;
     },
     set: function (value) {
-        this._icon = '<img src="/images/weathericon/' + (value) + '.png"></img>'
+        this._icon = '<img src="images/weathericon/' + (value) + '.png"></img>'
 
 
     }
