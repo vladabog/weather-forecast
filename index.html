@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Whater forecast</h1>
+        </header>
+        <div class="row">
+            <div class="col-md-12 offset-md-12">
+                <div class="weather">
+                    <div class="current">
+                        <div class="info">
+                            <div class="main">
+                                <div id="search">
+                                    <div id="icon"></div>
+                                    <label for="city">City name</label>
+                                    <input type="text" id="city">
+                                    <button type="button">Show wheater!</button>
+                                </div>
+                                <div id="load">Loading...</div>
+                                <div id="weather">
+                                    <h1 id="weatherCity">City name</h1>
+                                    <div id="weatherDescription">Weather forecast</div>
+                                    <div id="weatherTemperature">Temperature</div>
+                                </div>
+                                <div id="leftdata">
+                                    <div id="minTemp">minTemp</div>
+                                    <div id="maxTemp">maxTemp</div>
+                                    <div id="state">State</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <span class="wi-day-sunny"></span>
+                        </div>
+                    </div>
+                    <div class="future">
+                        <div class="day">
+                            <h3>Tomarrow</h3>
+                            <p><span class="wi-day-cloudy"></span></p>
+                        </div>
+                        <div class="day">
+                            <h3>After tomarrow</h3>
+                            <p><span class="wi-showers"></span></p>
+                        </div>
+                        <div class="day">
+                            <h3>Day after</h3>
+                            <p><span class="wi-rain"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/init.js"></script>
+    <script src="js/weather-data.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.weather {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0px 1px 10px 0px #cfcfcf;
+    overflow: hidden;
+}
+
+.weather .current {
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url("../images/002-Saborna-crkva-Beograd.jpg");
+    background-image: contain;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px #F68D2E;
+}
+
+.weather .current .info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+
+#leftdata {
+    float: right;
+}
+
+#icon {
+    float: right;
+}
+
+#weatherDescription {
+    font-size: 60px;
+}
+
+#weatherCity {
+    font-size: 56px;
+}
+
+#weatherTemperature {
+    font-size: 40px;
+}
+
+#minTemp {
+    font-size: 20px;
+}
+
+#maxTemp {
+    font-size: 20px;
+}
+
+#state {
+    font-size: 20px;
+}
+
+.weather .current .icon {
+    text-align: center;
+    font-size: 64px;
+    flex-grow: 1;
+}
+
+.weather .future {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.weather .future .day {
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.weather .future .day:hover {
+    color: #fff;
+    background-color: #F68D2E;
+}
+
+.weather .future .day h3 {
+    text-transform: uppercase;
+}
+
+.weather .future .day p {
+    font-size: 28px;
+}
